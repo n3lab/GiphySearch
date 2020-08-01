@@ -3,27 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DFC0BB0359AE9941D44353F2 /* Pods_GiphySearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BE0B608002268B5C406D59 /* Pods_GiphySearch.framework */; };
+		FEB094E024B33489005FF846 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB094DF24B33489005FF846 /* Gif.swift */; };
+		FEB094E324B34993005FF846 /* GifTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB094E124B34993005FF846 /* GifTableViewCell.swift */; };
+		FEB094E424B34993005FF846 /* GifTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB094E224B34993005FF846 /* GifTableViewCell.xib */; };
+		FEB094E624B34C4E005FF846 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB094E524B34C4E005FF846 /* SearchViewModel.swift */; };
 		FEE4431524B3207100CF7ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE4431424B3207100CF7ABA /* AppDelegate.swift */; };
 		FEE4431724B3207100CF7ABA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE4431624B3207100CF7ABA /* SceneDelegate.swift */; };
-		FEE4431924B3207100CF7ABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE4431824B3207100CF7ABA /* ViewController.swift */; };
+		FEE4431924B3207100CF7ABA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE4431824B3207100CF7ABA /* SearchViewController.swift */; };
 		FEE4431C24B3207100CF7ABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE4431A24B3207100CF7ABA /* Main.storyboard */; };
 		FEE4431E24B3207500CF7ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEE4431D24B3207500CF7ABA /* Assets.xcassets */; };
 		FEE4432124B3207500CF7ABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE4431F24B3207500CF7ABA /* LaunchScreen.storyboard */; };
+		FEE4432C24B3221900CF7ABA /* GiphyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE4432B24B3221900CF7ABA /* GiphyManager.swift */; };
+		FEE4433024B325EE00CF7ABA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE4432F24B325EE00CF7ABA /* DetailViewController.swift */; };
+		FEE4433224B3268600CF7ABA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE4433124B3268600CF7ABA /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55BE0B608002268B5C406D59 /* Pods_GiphySearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiphySearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF5BFB918AE49E55BBFEC4F /* Pods-GiphySearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphySearch.debug.xcconfig"; path = "Target Support Files/Pods-GiphySearch/Pods-GiphySearch.debug.xcconfig"; sourceTree = "<group>"; };
+		E159BCF55B270FB30352ADBE /* Pods-GiphySearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphySearch.release.xcconfig"; path = "Target Support Files/Pods-GiphySearch/Pods-GiphySearch.release.xcconfig"; sourceTree = "<group>"; };
+		FEB094DF24B33489005FF846 /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		FEB094E124B34993005FF846 /* GifTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifTableViewCell.swift; sourceTree = "<group>"; };
+		FEB094E224B34993005FF846 /* GifTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GifTableViewCell.xib; sourceTree = "<group>"; };
+		FEB094E524B34C4E005FF846 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		FEE4431124B3207100CF7ABA /* GiphySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiphySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE4431424B3207100CF7ABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEE4431624B3207100CF7ABA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FEE4431824B3207100CF7ABA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEE4431824B3207100CF7ABA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		FEE4431B24B3207100CF7ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEE4431D24B3207500CF7ABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEE4432024B3207500CF7ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEE4432224B3207500CF7ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEE4432B24B3221900CF7ABA /* GiphyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyManager.swift; sourceTree = "<group>"; };
+		FEE4432F24B325EE00CF7ABA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FEE4433124B3268600CF7ABA /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFC0BB0359AE9941D44353F2 /* Pods_GiphySearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19BD65A5677E3F1CD0F706A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CF5BFB918AE49E55BBFEC4F /* Pods-GiphySearch.debug.xcconfig */,
+				E159BCF55B270FB30352ADBE /* Pods-GiphySearch.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3685695393AA950F3BEF62F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55BE0B608002268B5C406D59 /* Pods_GiphySearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEB094DE24B33477005FF846 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEB094DF24B33489005FF846 /* Gif.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FEE4430824B3207100CF7ABA = {
 			isa = PBXGroup;
 			children = (
 				FEE4431324B3207100CF7ABA /* GiphySearch */,
 				FEE4431224B3207100CF7ABA /* Products */,
+				19BD65A5677E3F1CD0F706A3 /* Pods */,
+				3685695393AA950F3BEF62F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +102,46 @@
 		FEE4431324B3207100CF7ABA /* GiphySearch */ = {
 			isa = PBXGroup;
 			children = (
+				FEB094DE24B33477005FF846 /* Model */,
+				FEE4432824B3219D00CF7ABA /* Service */,
+				FEE4432924B321BF00CF7ABA /* Search */,
+				FEE4432A24B321D000CF7ABA /* Detail */,
+				FEE4433124B3268600CF7ABA /* Settings.swift */,
 				FEE4431424B3207100CF7ABA /* AppDelegate.swift */,
 				FEE4431624B3207100CF7ABA /* SceneDelegate.swift */,
-				FEE4431824B3207100CF7ABA /* ViewController.swift */,
 				FEE4431A24B3207100CF7ABA /* Main.storyboard */,
 				FEE4431D24B3207500CF7ABA /* Assets.xcassets */,
 				FEE4431F24B3207500CF7ABA /* LaunchScreen.storyboard */,
 				FEE4432224B3207500CF7ABA /* Info.plist */,
 			);
 			path = GiphySearch;
+			sourceTree = "<group>";
+		};
+		FEE4432824B3219D00CF7ABA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FEE4432B24B3221900CF7ABA /* GiphyManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FEE4432924B321BF00CF7ABA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FEB094E524B34C4E005FF846 /* SearchViewModel.swift */,
+				FEE4431824B3207100CF7ABA /* SearchViewController.swift */,
+				FEB094E124B34993005FF846 /* GifTableViewCell.swift */,
+				FEB094E224B34993005FF846 /* GifTableViewCell.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		FEE4432A24B321D000CF7ABA /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FEE4432F24B325EE00CF7ABA /* DetailViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEE4432524B3207500CF7ABA /* Build configuration list for PBXNativeTarget "GiphySearch" */;
 			buildPhases = (
+				32A2611DF94B802AE5BA5D21 /* [CP] Check Pods Manifest.lock */,
 				FEE4430D24B3207100CF7ABA /* Sources */,
 				FEE4430E24B3207100CF7ABA /* Frameworks */,
 				FEE4430F24B3207100CF7ABA /* Resources */,
+				305B69DAB927DD3E454FB38B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,20 +206,69 @@
 			files = (
 				FEE4432124B3207500CF7ABA /* LaunchScreen.storyboard in Resources */,
 				FEE4431E24B3207500CF7ABA /* Assets.xcassets in Resources */,
+				FEB094E424B34993005FF846 /* GifTableViewCell.xib in Resources */,
 				FEE4431C24B3207100CF7ABA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		305B69DAB927DD3E454FB38B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GiphySearch/Pods-GiphySearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GiphySearch/Pods-GiphySearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GiphySearch/Pods-GiphySearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32A2611DF94B802AE5BA5D21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GiphySearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FEE4430D24B3207100CF7ABA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEE4431924B3207100CF7ABA /* ViewController.swift in Sources */,
+				FEE4433224B3268600CF7ABA /* Settings.swift in Sources */,
+				FEE4431924B3207100CF7ABA /* SearchViewController.swift in Sources */,
+				FEB094E324B34993005FF846 /* GifTableViewCell.swift in Sources */,
+				FEE4432C24B3221900CF7ABA /* GiphyManager.swift in Sources */,
+				FEE4433024B325EE00CF7ABA /* DetailViewController.swift in Sources */,
 				FEE4431524B3207100CF7ABA /* AppDelegate.swift in Sources */,
+				FEB094E624B34C4E005FF846 /* SearchViewModel.swift in Sources */,
 				FEE4431724B3207100CF7ABA /* SceneDelegate.swift in Sources */,
+				FEB094E024B33489005FF846 /* Gif.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +410,7 @@
 		};
 		FEE4432624B3207500CF7ABA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CF5BFB918AE49E55BBFEC4F /* Pods-GiphySearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +429,7 @@
 		};
 		FEE4432724B3207500CF7ABA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E159BCF55B270FB30352ADBE /* Pods-GiphySearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

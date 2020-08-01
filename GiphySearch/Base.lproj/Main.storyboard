@@ -1,24 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uLz-IY-Gmi">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Giphy Search-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SearchViewController" customModule="GiphySearch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e4m-Rx-Q3t">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="SpB-4Q-fHP">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="e4m-Rx-Q3t" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9dm-Qc-rpW"/>
+                            <constraint firstItem="e4m-Rx-Q3t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WX9-E6-0NU"/>
+                            <constraint firstItem="e4m-Rx-Q3t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jqN-1i-2C4"/>
+                            <constraint firstItem="e4m-Rx-Q3t" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kzy-AW-1B2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Giphy Search" id="Tdr-Jt-0xC">
+                        <barButtonItem key="backBarButtonItem" title=" " id="cE6-cN-gCH"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="gifsTableView" destination="e4m-Rx-Q3t" id="lwT-tT-pPn"/>
+                        <outlet property="searchBar" destination="SpB-4Q-fHP" id="OdD-jE-DuS"/>
+                        <segue destination="7mD-jq-gro" kind="show" identifier="ShowDetail" id="Mqx-BV-Kzw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1049" y="103"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="6fs-wx-CId">
+            <objects>
+                <viewController id="7mD-jq-gro" customClass="DetailViewController" customModule="GiphySearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bqv-Yw-uiQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qex-r9-qsd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qex-r9-qsd" firstAttribute="trailing" secondItem="Vmw-63-HCw" secondAttribute="trailing" id="DSx-cD-vxF"/>
+                            <constraint firstItem="qex-r9-qsd" firstAttribute="top" secondItem="Vmw-63-HCw" secondAttribute="top" id="J5C-ex-dgr"/>
+                            <constraint firstItem="qex-r9-qsd" firstAttribute="bottom" secondItem="Vmw-63-HCw" secondAttribute="bottom" id="W8S-81-uYz"/>
+                            <constraint firstItem="qex-r9-qsd" firstAttribute="leading" secondItem="Vmw-63-HCw" secondAttribute="leading" id="trR-2L-y1Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vmw-63-HCw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="P7T-Nf-JFX">
+                        <barButtonItem key="backBarButtonItem" title=" " id="qXT-Qv-2AM"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="gifImageView" destination="qex-r9-qsd" id="Zw1-SC-sTj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xNv-gj-2KX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2040.8" y="102.99850074962519"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s0T-pq-4VU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uLz-IY-Gmi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="by6-4L-ebx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LKg-rr-B6m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dLG-fV-JYO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="102.99850074962519"/>
         </scene>
     </scenes>
 </document>
